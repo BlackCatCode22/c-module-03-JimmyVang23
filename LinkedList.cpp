@@ -48,11 +48,22 @@ int main() {
 // Add a node to our linked list using our four steps
 // Create a new node
     pNew = new node();
+// Fill the data field
     pNew->data = myStr[1];
     pNew->next = nullptr;
+// Attatch new node to head of list
+    pNew->next = pHead;
+// Reposition
 
 // Output our linked list:
     cout << "\n The linked list\n";
+
+    cout << "\n The current linked list: \n":
+    cout << pHead->data << endl;
+    cout << pHead->next << endl;
+
+    cout << "\n End of list!";
+
 
 
     return 0;
